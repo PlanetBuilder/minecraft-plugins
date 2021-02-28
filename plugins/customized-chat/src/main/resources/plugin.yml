@@ -1,6 +1,0 @@
-name: Customized Chat
-version: ${project.version}
-main: de.planetbuilder.customizedchat.Main
-api-version: 1.16
-authors: [ PlanetBuilder ]
-description: Pluin to customize the Chat
