@@ -11,8 +11,11 @@ import java.util.UUID;
 
 
 public class CommandJoinMassage implements CommandExecutor {
-
     private HashMap<UUID, CCPlayerData> cCPlayerDataByUUID;
+    Player player;
+    Player meantPlayer;
+    UUID meantPlayerUUID;
+    CCPlayerData temporareCCPlayerData;
 
     public CommandJoinMassage(HashMap<UUID, CCPlayerData> cCPlayerDataByUUID) {
         this.cCPlayerDataByUUID = cCPlayerDataByUUID;
@@ -24,20 +27,24 @@ public class CommandJoinMassage implements CommandExecutor {
         if(!(sender instanceof Player) || !(command.getName().equalsIgnoreCase("joinmessage"))){
             return false;
         }
-        Player player = (Player) sender;
-        Player meantPlayer;
+
+        player = (Player) sender;
+
         if(args.length != 2 && args.length != 3){
             player.sendMessage("§c(!) /joinmessage <player> <prefix> <suffix>");
             return false;
         }
-
 
         try {
             meantPlayer = player.getServer().getPlayer(args[0]);
         } catch (Exception e) {
             return false;
         }
-        UUID meantPlayerUUID = meantPlayer.getUniqueId();
+
+        meantPlayerUUID = meantPlayer.getUniqueId();
+        temporareCCPlayerData.setJoinMessagePrefix(args[1]);
+        temporareCCPlayerData.setJoinMessageSuffix(args[2]);
+
 
 
 
