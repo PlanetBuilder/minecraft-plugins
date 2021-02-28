@@ -1,74 +1,38 @@
-[15:48:38] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[15:48:38] [main/INFO]: Found new data pack file/bukkit, loading it automatically
-[15:48:38] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[15:48:38] [Worker-Main-7/INFO]: Loaded 7 recipes
-[15:48:39] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[15:48:39] [Server thread/INFO]: Loading properties
-[15:48:39] [Server thread/INFO]: This server is running Paper version git-Paper-503 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[15:48:39] [Server thread/INFO]: Debug logging is disabled
-[15:48:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[15:48:39] [Server thread/INFO]: Using 4 threads for Netty based IO
-[15:48:39] [Server thread/INFO]: Default game type: SURVIVAL
-[15:48:39] [Server thread/INFO]: Generating keypair
-[15:48:39] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:48:39] [Server thread/INFO]: Using epoll channel type
-[15:48:39] [Server thread/ERROR]: Could not load 'plugins/customized-chat.jar' in folder 'plugins': uses the space-character (0x20) in its name
-[15:48:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:48:39] [Server thread/INFO]: Preparing level "world"
-[15:48:42] [Server thread/WARN]: Unable to find spawn biome
-[15:48:43] [Server thread/WARN]: Unable to find spawn biome
-[15:48:43] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[15:48:43] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[15:48:43] [Worker-Main-7/INFO]: Preparing spawn area: 0%
-[15:48:43] [Server thread/INFO]: Time elapsed: 261 ms
-[15:48:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[15:48:43] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[15:48:43] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[15:48:43] [Server thread/INFO]: Time elapsed: 248 ms
-[15:48:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[15:48:43] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[15:48:43] [Worker-Main-8/INFO]: Preparing spawn area: 0%
-[15:48:44] [Server thread/INFO]: Time elapsed: 281 ms
-[15:48:44] [Server thread/INFO]: Running delayed init tasks
-[15:48:44] [Server thread/INFO]: Done (4.491s)! For help, type "help"
-[15:48:44] [Server thread/INFO]: Timings Reset
-[15:58:27] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[15:58:27] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[15:58:27] [Server thread/INFO]: Debug logging is disabled
-[15:58:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[15:58:27] [Server thread/INFO]: Using 4 threads for Netty based IO
-[15:58:27] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[15:58:27] [Server thread/INFO]: Loaded 7 recipes
-[15:58:28] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[15:58:28] [Server thread/INFO]: Loaded 7 recipes
-[15:58:28] [Server thread/ERROR]: Could not load 'plugins/customized-chat.jar' in folder 'plugins': uses the space-character (0x20) in its name
-[15:58:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:58:28] [Server thread/INFO]: CONSOLE: Reload complete.
-[15:58:28] [Server thread/INFO]: Timings Reset
-[15:59:40] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[15:59:40] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[15:59:40] [Server thread/INFO]: Debug logging is disabled
-[15:59:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[15:59:40] [Server thread/INFO]: Using 4 threads for Netty based IO
-[15:59:40] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[15:59:40] [Server thread/INFO]: Loaded 7 recipes
-[15:59:40] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[15:59:40] [Server thread/INFO]: Loaded 7 recipes
-[15:59:41] [Server thread/ERROR]: Could not load 'plugins/customizedchat.jar' in folder 'plugins': uses the space-character (0x20) in its name
-[15:59:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:59:41] [Server thread/INFO]: CONSOLE: Reload complete.
-[15:59:41] [Server thread/INFO]: Timings Reset
-[16:05:24] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[16:05:24] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[16:05:24] [Server thread/INFO]: Debug logging is disabled
-[16:05:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:05:24] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:05:24] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[16:05:24] [Server thread/INFO]: Loaded 7 recipes
-[16:05:25] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[16:05:25] [Server thread/INFO]: Loaded 7 recipes
-[16:05:25] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[16:05:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:05:25] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[16:05:25] [Server thread/INFO]: CONSOLE: Reload complete.
-[16:05:25] [Server thread/INFO]: Timings Reset
+[21:52:18] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:52:18] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[21:52:19] [Worker-Main-8/INFO]: Loaded 7 recipes
+[21:52:20] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[21:52:20] [Server thread/INFO]: Loading properties
+[21:52:20] [Server thread/INFO]: This server is running Paper version git-Paper-503 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[21:52:20] [Server thread/INFO]: Debug logging is disabled
+[21:52:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:52:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:52:20] [Server thread/INFO]: Default game type: SURVIVAL
+[21:52:20] [Server thread/INFO]: Generating keypair
+[21:52:20] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:52:20] [Server thread/INFO]: Using epoll channel type
+[21:52:20] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:52:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:52:20] [Server thread/INFO]: Preparing level "world"
+[21:52:21] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:52:21] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[21:52:21] [Server thread/INFO]: Preparing spawn area: 0%
+[21:52:21] [Server thread/INFO]: Preparing spawn area: 9%
+[21:52:21] [Server thread/INFO]: Time elapsed: 587 ms
+[21:52:21] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:52:21] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[21:52:21] [Server thread/INFO]: Preparing spawn area: 0%
+[21:52:21] [Server thread/INFO]: Time elapsed: 134 ms
+[21:52:21] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:52:21] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[21:52:21] [Server thread/INFO]: Time elapsed: 91 ms
+[21:52:21] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:52:21] [Server thread/INFO]: Running delayed init tasks
+[21:52:21] [Server thread/INFO]: Done (1.500s)! For help, type "help"
+[21:52:21] [Server thread/INFO]: Timings Reset
+[21:53:08] [User Authenticator #1/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[21:53:09] [Server thread/INFO]: ILikeHoppas joined the game
+[21:53:09] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37334] logged in with entity id 220 at ([world]187.5, 64.0, 128.5)
+[21:53:24] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas ofudhav oausydf
+[21:53:29] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas ofudhav oausydf asdf
+[21:55:03] [Server thread/INFO]: Made ILikeHoppas a server operator

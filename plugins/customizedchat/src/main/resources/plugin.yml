@@ -4,3 +4,9 @@ main: de.planetbuilder.customizedchat.Main
 api-version: 1.16
 authors: [ PlanetBuilder ]
 description: Plugin for Chat Customization
+
+commands:
+  joinmessage:
+    description: Sets joinmessage for a single player
+    usage: /<command> <player> <prefix> <suffix>
+    aliases: setjoinmessage
