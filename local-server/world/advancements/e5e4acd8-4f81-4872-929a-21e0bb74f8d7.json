@@ -11,13 +11,37 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef_from_smoking": {
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2021-03-01 12:33:05 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
     "criteria": {
       "has_beef": "2021-02-28 21:54:53 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2021-03-01 12:33:05 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2021-03-01 12:33:05 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2021-03-01 12:33:05 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
     "criteria": {
       "has_beef": "2021-02-28 21:54:53 +0100"
     },
@@ -35,6 +59,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2021-03-01 12:33:05 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_helmet": {
     "criteria": {
       "has_leather": "2021-02-28 21:54:53 +0100"
@@ -47,13 +77,13 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/leather_horse_armor": {
+  "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
-      "has_leather": "2021-02-28 21:54:53 +0100"
+      "in_water": "2021-03-01 12:33:05 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_leggings": {
+  "minecraft:recipes/misc/leather_horse_armor": {
     "criteria": {
       "has_leather": "2021-02-28 21:54:53 +0100"
     },
@@ -62,10 +92,19 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:forest": "2021-02-28 22:01:30 +0100",
+      "minecraft:desert_hills": "2021-03-01 12:32:48 +0100",
+      "minecraft:desert": "2021-03-01 12:27:24 +0100",
+      "minecraft:river": "2021-03-01 12:33:19 +0100",
       "minecraft:savanna": "2021-02-28 22:01:35 +0100",
       "minecraft:plains": "2021-02-28 21:53:09 +0100"
     },
     "done": false
+  },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2021-02-28 21:54:53 +0100"
+    },
+    "done": true
   },
   "DataVersion": 2586
 }

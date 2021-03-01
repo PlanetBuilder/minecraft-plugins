@@ -1,5 +1,6 @@
 package de.planetbuilder.customizedchat.commands;
 
+import de.planetbuilder.customizedchat.Main;
 import de.planetbuilder.customizedchat.data.CCPlayerData;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -15,7 +16,9 @@ public class CommandJoinMassage implements CommandExecutor {
     Player player;
     Player meantPlayer;
     UUID meantPlayerUUID;
-    CCPlayerData temporareCCPlayerData;
+    CCPlayerData temporareCCPlayerData = new CCPlayerData();
+    String prefix;
+    String suffix;
 
     public CommandJoinMassage(HashMap<UUID, CCPlayerData> cCPlayerDataByUUID) {
         this.cCPlayerDataByUUID = cCPlayerDataByUUID;
@@ -24,16 +27,11 @@ public class CommandJoinMassage implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(!(sender instanceof Player) || !(command.getName().equalsIgnoreCase("joinmessage"))){
+        if(!(sender instanceof Player) || !(command.getName().equalsIgnoreCase("joinmessage")) || (args.length != 2 && args.length != 3)){
             return false;
         }
 
         player = (Player) sender;
-
-        if(args.length != 2 && args.length != 3){
-            player.sendMessage("§c(!) /joinmessage <player> <prefix> <suffix>");
-            return false;
-        }
 
         try {
             meantPlayer = player.getServer().getPlayer(args[0]);
@@ -41,9 +39,16 @@ public class CommandJoinMassage implements CommandExecutor {
             return false;
         }
 
+        assert meantPlayer != null;
         meantPlayerUUID = meantPlayer.getUniqueId();
-        temporareCCPlayerData.setJoinMessagePrefix(args[1]);
-        temporareCCPlayerData.setJoinMessageSuffix(args[2]);
+
+        prefix = args[1].replace('&', '§');
+        suffix = args[2].replace('&', '§');
+
+        temporareCCPlayerData.setJoinMessagePrefix(prefix);
+        temporareCCPlayerData.setJoinMessageSuffix(suffix);
+
+        Main.cCPlayerDataByUUID.put(meantPlayerUUID, temporareCCPlayerData);
 
 
 
