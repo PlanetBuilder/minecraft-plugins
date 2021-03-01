@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 import java.util.HashMap;
 import java.util.UUID;
+import java.util.regex.Pattern;
 
 
 public class CommandJoinMassage implements CommandExecutor {
@@ -16,9 +17,10 @@ public class CommandJoinMassage implements CommandExecutor {
     Player player;
     Player meantPlayer;
     UUID meantPlayerUUID;
-    CCPlayerData temporareCCPlayerData = new CCPlayerData();
+    CCPlayerData temporaryCCPlayerData = new CCPlayerData();
     String prefix;
     String suffix;
+    int[] argsBunnyEars;
 
     public CommandJoinMassage(HashMap<UUID, CCPlayerData> cCPlayerDataByUUID) {
         this.cCPlayerDataByUUID = cCPlayerDataByUUID;
@@ -27,7 +29,7 @@ public class CommandJoinMassage implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(!(sender instanceof Player) || !(command.getName().equalsIgnoreCase("joinmessage")) || (args.length != 2 && args.length != 3)){
+        if(!(sender instanceof Player) || !(command.getName().equalsIgnoreCase("joinmessage") || command.getName().equalsIgnoreCase("setjoinmessage"))){
             return false;
         }
 
@@ -42,17 +44,30 @@ public class CommandJoinMassage implements CommandExecutor {
         assert meantPlayer != null;
         meantPlayerUUID = meantPlayer.getUniqueId();
 
-        prefix = args[1].replace('&', '§');
-        suffix = args[2].replace('&', '§');
-
-        temporareCCPlayerData.setJoinMessagePrefix(prefix);
-        temporareCCPlayerData.setJoinMessageSuffix(suffix);
-
-        Main.cCPlayerDataByUUID.put(meantPlayerUUID, temporareCCPlayerData);
+        for(int i = 0; i < (args.length - 1); i++){
+            args[i] = args[i+1];
+        }
+        args[args.length-1] = null;
 
 
+        prefix = quotedSpaces(args)[0];
+        suffix = quotedSpaces(args)[1];
+
+        prefix = prefix.replace('&', '§');
+        suffix = suffix.replace('&', '§');
+
+        temporaryCCPlayerData.setJoinMessagePrefix(prefix);
+        temporaryCCPlayerData.setJoinMessageSuffix(suffix);
+
+        Main.cCPlayerDataByUUID.put(meantPlayerUUID, temporaryCCPlayerData);
 
 
         return true;
+    }
+
+    private static final Pattern PATTERN = Pattern.compile("\"?( |$)(?=(([^\"]*\"){2})*[^\"]*$)\"?");
+
+    public static String[] quotedSpaces(String[] arguments) {
+        return PATTERN.split(String.join(" ", arguments).replaceAll("^\"", ""));
     }
 }
