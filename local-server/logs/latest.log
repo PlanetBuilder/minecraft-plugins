@@ -1,40 +1,175 @@
-[12:22:47] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[12:22:47] [Worker-Main-7/INFO]: Loaded 7 recipes
-[12:22:48] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[12:22:48] [Server thread/INFO]: Loading properties
-[12:22:48] [Server thread/INFO]: This server is running Paper version git-Paper-503 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[12:22:48] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:22:48] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:22:48] [Server thread/INFO]: Debug logging is disabled
-[12:22:48] [Server thread/INFO]: Default game type: SURVIVAL
-[12:22:48] [Server thread/INFO]: Generating keypair
-[12:22:48] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:22:48] [Server thread/INFO]: Using epoll channel type
-[12:22:48] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[12:22:48] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:22:48] [Server thread/INFO]: Preparing level "world"
-[12:22:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[12:22:49] [Server thread/INFO]: Loaded 0 spawn chunks for world world
-[12:22:49] [Server thread/INFO]: Preparing spawn area: 0%
-[12:22:49] [Server thread/INFO]: Time elapsed: 244 ms
-[12:22:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[12:22:49] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
-[12:22:49] [Server thread/INFO]: Preparing spawn area: 0%
-[12:22:49] [Server thread/INFO]: Preparing spawn area: 4%
-[12:22:50] [Server thread/INFO]: Time elapsed: 852 ms
-[12:22:50] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[12:22:50] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
-[12:22:50] [Server thread/INFO]: Preparing spawn area: 0%
-[12:22:50] [Server thread/INFO]: Time elapsed: 121 ms
-[12:22:50] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[12:22:50] [Server thread/INFO]: Running delayed init tasks
-[12:22:50] [Server thread/INFO]: Done (1.834s)! For help, type "help"
-[12:22:50] [Server thread/INFO]: Timings Reset
-[12:23:37] [User Authenticator #1/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
-[12:23:38] [Server thread/INFO]: ILikeHoppas joined the game
-[12:23:38] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37796] logged in with entity id 295 at ([world]95.5716677394674, 92.15760167460026, 75.31975759592055)
-[12:24:57] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas &eHallo&l .
-[12:24:57] [Server thread/ERROR]: null
+[21:47:10] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:47:11] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[21:47:11] [Worker-Main-8/INFO]: Loaded 7 recipes
+[21:47:12] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[21:47:12] [Server thread/INFO]: Loading properties
+[21:47:12] [Server thread/INFO]: This server is running Paper version git-Paper-503 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[21:47:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:47:12] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:47:12] [Server thread/INFO]: Debug logging is disabled
+[21:47:12] [Server thread/INFO]: Default game type: SURVIVAL
+[21:47:12] [Server thread/INFO]: Generating keypair
+[21:47:12] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:47:12] [Server thread/INFO]: Using epoll channel type
+[21:47:12] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:47:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:47:12] [Server thread/INFO]: Preparing level "world"
+[21:47:12] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:47:13] [Server thread/INFO]: Loaded 0 spawn chunks for world world
+[21:47:13] [Server thread/INFO]: Preparing spawn area: 0%
+[21:47:13] [Server thread/INFO]: Preparing spawn area: 0%
+[21:47:13] [Server thread/INFO]: Time elapsed: 661 ms
+[21:47:13] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:47:13] [Server thread/INFO]: Loaded 0 spawn chunks for world world_nether
+[21:47:13] [Server thread/INFO]: Preparing spawn area: 0%
+[21:47:14] [Server thread/INFO]: Time elapsed: 423 ms
+[21:47:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:47:14] [Server thread/INFO]: Loaded 0 spawn chunks for world world_the_end
+[21:47:14] [Server thread/INFO]: Preparing spawn area: 0%
+[21:47:14] [Server thread/INFO]: Time elapsed: 89 ms
+[21:47:14] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:47:14] [Server thread/INFO]: Running delayed init tasks
+[21:47:14] [Server thread/INFO]: Done (1.877s)! For help, type "help"
+[21:47:14] [Server thread/INFO]: Timings Reset
+[21:47:18] [User Authenticator #1/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[21:47:18] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to CustomizedChat v1.0-SNAPSHOT
+java.lang.NullPointerException: Cannot invoke "de.planetbuilder.customizedchat.data.CCPlayerData.getJoinMessagePrefix()" because the return value of "java.util.HashMap.get(Object)" is null
+	at de.planetbuilder.customizedchat.listeners.ListenerJoin.onJoin(ListenerJoin.java:24) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor1.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Paper-503]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Paper-503]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Paper-503]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:607) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerList.postChunkLoadJoin(PlayerList.java:275) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerList.lambda$null$1(PlayerList.java:222) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.tick(PlayerConnection.java:169) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.NetworkManager.a(NetworkManager.java:390) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.ServerConnection.c(ServerConnection.java:145) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.b(MinecraftServer.java:1387) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.b(DedicatedServer.java:377) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.a(MinecraftServer.java:1214) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1002) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:175) ~[patched_1.16.5.jar:git-Paper-503]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[21:47:18] [Server thread/INFO]: ILikeHoppas joined the game
+[21:47:18] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59336] logged in with entity id 260 at ([world]381.0784661927746, 76.4318289488234, 188.15232610006152)
+[21:48:12] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&c&lHallo, ich bin " ". Ich komme um euch zu helfen."
+[21:48:43] [Async Chat Thread - #0/INFO]: <ILikeHoppas> rl
+[21:48:47] [Server thread/INFO]: ILikeHoppas issued server command: /rl
+[21:48:47] [Server thread/INFO]: ILikeHoppas: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[21:48:50] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[21:48:50] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[21:48:50] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[21:48:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:48:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:48:50] [Server thread/INFO]: Debug logging is disabled
+[21:48:50] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[21:48:50] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:48:50] [Server thread/INFO]: Loaded 7 recipes
+[21:48:51] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:48:51] [Server thread/INFO]: Loaded 7 recipes
+[21:48:51] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:48:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:48:51] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:48:51] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[21:48:51] [Server thread/INFO]: Timings Reset
+[21:48:59] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&c&lHallo, ich bin " ". Ich komme um euch zu helfen."
+[21:52:24] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[21:52:24] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[21:52:24] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[21:52:24] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:52:24] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:52:24] [Server thread/INFO]: Debug logging is disabled
+[21:52:24] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[21:52:24] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:52:24] [Server thread/INFO]: Loaded 7 recipes
+[21:52:24] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:52:24] [Server thread/INFO]: Loaded 7 recipes
+[21:52:25] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:52:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:52:25] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:52:25] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[21:52:25] [Server thread/INFO]: Timings Reset
+[21:52:26] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&c&lHallo, ich bin " ". Ich komme um euch zu helfen."
+[21:54:19] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[21:54:19] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[21:54:19] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[21:54:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:54:19] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:54:19] [Server thread/INFO]: Debug logging is disabled
+[21:54:19] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[21:54:19] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:54:19] [Server thread/INFO]: Loaded 7 recipes
+[21:54:20] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:54:20] [Server thread/INFO]: Loaded 7 recipes
+[21:54:20] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:54:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:54:20] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:54:20] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[21:54:20] [Server thread/INFO]: Timings Reset
+[21:54:22] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&c&lHallo, ich bin " ". Ich komme um euch zu helfen."
+[21:56:29] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[21:56:29] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[21:56:29] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[21:56:29] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:56:29] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:56:29] [Server thread/INFO]: Debug logging is disabled
+[21:56:29] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[21:56:29] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:56:29] [Server thread/INFO]: Loaded 7 recipes
+[21:56:29] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:56:29] [Server thread/INFO]: Loaded 7 recipes
+[21:56:30] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:56:30] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:56:30] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:56:30] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[21:56:30] [Server thread/INFO]: Timings Reset
+[21:56:32] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&c&lHallo, ich bin " ". Ich komme um euch zu helfen."
+[21:56:34] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[21:56:34] [Server thread/INFO]: ILikeHoppas left the game
+[21:56:36] [User Authenticator #2/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[21:56:36] [Server thread/INFO]: nullILikeHoppasHallo,
+[21:56:36] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59422] logged in with entity id 1593 at ([world]309.99978329768226, 97.40956901175544, 356.2158585851081)
+[21:57:28] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[21:57:28] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[21:57:28] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[21:57:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:57:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:57:28] [Server thread/INFO]: Debug logging is disabled
+[21:57:28] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[21:57:29] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:57:29] [Server thread/INFO]: Loaded 7 recipes
+[21:57:29] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[21:57:29] [Server thread/INFO]: Loaded 7 recipes
+[21:57:29] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[21:57:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:57:29] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[21:57:29] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[21:57:29] [Server thread/INFO]: Timings Reset
+[21:57:57] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "Hallo ih geilen, " " ist hier"
+[21:58:02] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[21:58:02] [Server thread/INFO]: ILikeHoppas left the game
+[21:58:04] [User Authenticator #3/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[21:58:04] [Server thread/INFO]: ILikeHoppasILikeHoppasHallo
+[21:58:04] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59444] logged in with entity id 1757 at ([world]324.66363205541415, 87.28500940741345, 320.49669359062005)
+[22:00:35] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[22:00:35] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[22:00:35] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[22:00:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:00:35] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:00:35] [Server thread/INFO]: Debug logging is disabled
+[22:00:35] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[22:00:35] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:00:35] [Server thread/INFO]: Loaded 7 recipes
+[22:00:36] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:00:36] [Server thread/INFO]: Loaded 7 recipes
+[22:00:36] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[22:00:36] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:00:36] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[22:00:36] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[22:00:36] [Server thread/INFO]: Timings Reset
+[22:00:40] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "Hallo ih geilen, " " ist hier"
+[22:00:40] [Server thread/ERROR]: null
 org.bukkit.command.CommandException: Unhandled exception executing command 'setjoinmessage' in plugin CustomizedChat v1.0-SNAPSHOT
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[patched_1.16.5.jar:git-Paper-503]
 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-503]
@@ -56,12 +191,50 @@ org.bukkit.command.CommandException: Unhandled exception executing command 'setj
 	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1006) ~[patched_1.16.5.jar:git-Paper-503]
 	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:175) ~[patched_1.16.5.jar:git-Paper-503]
 	at java.lang.Thread.run(Thread.java:832) [?:?]
-Caused by: java.lang.NullPointerException: Cannot invoke "de.planetbuilder.customizedchat.data.CCPlayerData.setJoinMessagePrefix(String)" because "this.temporareCCPlayerData" is null
-	at de.planetbuilder.customizedchat.commands.CommandJoinMassage.onCommand(CommandJoinMassage.java:47) ~[?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at de.planetbuilder.customizedchat.commands.CommandJoinMassage.onCommand(CommandJoinMassage.java:48) ~[?:?]
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[patched_1.16.5.jar:git-Paper-503]
 	... 19 more
-[12:25:06] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&eHallo&l" "."
-[12:25:06] [Server thread/ERROR]: null
+[22:02:38] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[22:02:38] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[22:02:38] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[22:02:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:02:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:02:38] [Server thread/INFO]: Debug logging is disabled
+[22:02:38] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[22:02:38] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:02:38] [Server thread/INFO]: Loaded 7 recipes
+[22:02:39] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:02:39] [Server thread/INFO]: Loaded 7 recipes
+[22:02:39] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[22:02:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:02:39] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[22:02:39] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[22:02:39] [Server thread/INFO]: Timings Reset
+[22:02:43] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "Hallo ih geilen, " " ist hier"
+[22:02:49] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[22:02:49] [Server thread/INFO]: ILikeHoppas left the game
+[22:02:50] [User Authenticator #4/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[22:02:50] [Server thread/INFO]: HalloILikeHoppasih
+[22:02:50] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59526] logged in with entity id 2268 at ([world]334.3734065493917, 88.03012935809548, 373.5758626681845)
+[22:12:38] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[22:12:38] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[22:12:38] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[22:12:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:12:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:12:38] [Server thread/INFO]: Debug logging is disabled
+[22:12:38] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[22:12:38] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:12:38] [Server thread/INFO]: Loaded 7 recipes
+[22:12:38] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:12:38] [Server thread/INFO]: Loaded 7 recipes
+[22:12:39] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[22:12:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:12:39] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[22:12:39] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[22:12:39] [Server thread/INFO]: Timings Reset
+[22:12:41] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "Hallo ihr geilen, " " ist hier."
+[22:12:41] [Server thread/ERROR]: null
 org.bukkit.command.CommandException: Unhandled exception executing command 'setjoinmessage' in plugin CustomizedChat v1.0-SNAPSHOT
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[patched_1.16.5.jar:git-Paper-503]
 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-503]
@@ -83,132 +256,115 @@ org.bukkit.command.CommandException: Unhandled exception executing command 'setj
 	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1006) ~[patched_1.16.5.jar:git-Paper-503]
 	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:175) ~[patched_1.16.5.jar:git-Paper-503]
 	at java.lang.Thread.run(Thread.java:832) [?:?]
-Caused by: java.lang.NullPointerException: Cannot invoke "de.planetbuilder.customizedchat.data.CCPlayerData.setJoinMessagePrefix(String)" because "this.temporareCCPlayerData" is null
-	at de.planetbuilder.customizedchat.commands.CommandJoinMassage.onCommand(CommandJoinMassage.java:47) ~[?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at de.planetbuilder.customizedchat.commands.CommandJoinMassage.onCommand(CommandJoinMassage.java:54) ~[?:?]
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[patched_1.16.5.jar:git-Paper-503]
 	... 19 more
-[12:27:23] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
-[12:27:23] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
-[12:27:23] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
-[12:27:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:27:23] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:27:23] [Server thread/INFO]: Debug logging is disabled
-[12:27:23] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
-[12:27:23] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:27:23] [Server thread/INFO]: Loaded 7 recipes
-[12:27:23] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:27:23] [Server thread/INFO]: Loaded 7 recipes
-[12:27:24] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[12:27:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:27:24] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[12:27:24] [Server thread/INFO]: ILikeHoppas: Reload complete.
-[12:27:24] [Server thread/INFO]: Timings Reset
-[12:27:29] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&eHallo&l" "."
-[12:27:38] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas &eHallo&l .
-[12:27:40] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
-[12:27:40] [Server thread/INFO]: ILikeHoppas left the game
-[12:27:42] [User Authenticator #2/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
-[12:27:42] [Server thread/INFO]: ILikeHoppas joined the game
-[12:27:42] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37838] logged in with entity id 861 at ([world]93.37265171472824, 94.40214137348372, 16.42699435136075)
-[12:28:23] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
-[12:28:23] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
-[12:28:23] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
-[12:28:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:28:23] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:28:23] [Server thread/INFO]: Debug logging is disabled
-[12:28:23] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
-[12:28:23] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:28:23] [Server thread/INFO]: Loaded 7 recipes
-[12:28:24] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:28:24] [Server thread/INFO]: Loaded 7 recipes
-[12:28:24] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[12:28:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:28:24] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[12:28:24] [Server thread/INFO]: ILikeHoppas: Reload complete.
-[12:28:24] [Server thread/INFO]: Timings Reset
-[12:28:28] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
-[12:28:28] [Server thread/INFO]: ILikeHoppas left the game
-[12:28:29] [User Authenticator #2/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
-[12:28:29] [Server thread/INFO]: ILikeHoppas joined the game
-[12:28:29] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37864] logged in with entity id 989 at ([world]69.59997123134497, 86.15214097114585, 25.942523933245866)
-[12:29:43] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[12:29:43] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[12:29:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:29:43] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:29:43] [Server thread/INFO]: Debug logging is disabled
-[12:29:43] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
-[12:29:43] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:29:43] [Server thread/INFO]: Loaded 7 recipes
-[12:29:43] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:29:43] [Server thread/INFO]: Loaded 7 recipes
-[12:29:44] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[12:29:44] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:29:44] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[12:29:44] [Server thread/INFO]: CONSOLE: Reload complete.
-[12:29:44] [Server thread/INFO]: Timings Reset
-[12:29:57] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
-[12:29:57] [Server thread/INFO]: ILikeHoppas left the game
-[12:29:59] [User Authenticator #3/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
-[12:30:00] [Server thread/INFO]: ILikeHoppas joined the game
-[12:30:00] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37888] logged in with entity id 1158 at ([world]106.60296149930588, 88.01067387203216, -19.071953407119842)
-[12:30:55] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[12:30:55] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[12:30:55] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:30:55] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:30:55] [Server thread/INFO]: Debug logging is disabled
-[12:30:55] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
-[12:30:55] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:30:55] [Server thread/INFO]: Loaded 7 recipes
-[12:30:56] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:30:56] [Server thread/INFO]: Loaded 7 recipes
-[12:30:56] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[12:30:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:30:56] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[12:30:56] [Server thread/INFO]: CONSOLE: Reload complete.
-[12:30:56] [Server thread/INFO]: Timings Reset
-[12:31:03] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
-[12:31:03] [Server thread/INFO]: ILikeHoppas left the game
-[12:31:04] [User Authenticator #4/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
-[12:31:04] [Server thread/INFO]: hi
-[12:31:04] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37916] logged in with entity id 1288 at ([world]141.09367465139053, 81.64134136341539, -9.225792384997874)
-[12:31:42] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[12:31:42] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[12:31:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:31:42] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:31:42] [Server thread/INFO]: Debug logging is disabled
-[12:31:42] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
-[12:31:42] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:31:42] [Server thread/INFO]: Loaded 7 recipes
-[12:31:42] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[12:31:42] [Server thread/INFO]: Loaded 7 recipes
-[12:31:43] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
-[12:31:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:31:43] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
-[12:31:43] [Server thread/INFO]: CONSOLE: Reload complete.
-[12:31:43] [Server thread/INFO]: Timings Reset
-[12:32:27] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas &eHallo&l, .
-[12:32:29] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
-[12:32:29] [Server thread/INFO]: ILikeHoppas left the game
-[12:32:30] [User Authenticator #5/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
-[12:32:30] [Server thread/INFO]: Hallo,ILikeHoppas.
-[12:32:30] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:37940] logged in with entity id 1454 at ([world]170.04410321545473, 86.88036385510863, 0.1581734341132901)
-[12:34:15] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage "ads asd" "asd asd"
-[13:14:22] [Server thread/INFO]: Stopping the server
-[13:14:22] [Server thread/INFO]: Stopping server
-[13:14:22] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
-[13:14:22] [Server thread/INFO]: Saving players
-[13:14:22] [Server thread/INFO]: ILikeHoppas lost connection: Server closed
-[13:14:22] [Server thread/INFO]: ILikeHoppas left the game
-[13:14:22] [Server thread/INFO]: Saving worlds
-[13:14:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[13:14:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:14:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[13:14:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:14:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[13:14:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:14:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:14:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:14:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:14:22] [Server thread/INFO]: Flushing Chunk IO
-[13:14:22] [Server thread/INFO]: Closing Thread Pool
-[13:14:22] [Server thread/INFO]: Closing Server
+[22:14:06] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[22:14:06] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[22:14:06] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[22:14:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:14:06] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:14:06] [Server thread/INFO]: Debug logging is disabled
+[22:14:06] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[22:14:06] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:14:06] [Server thread/INFO]: Loaded 7 recipes
+[22:14:07] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:14:07] [Server thread/INFO]: Loaded 7 recipes
+[22:14:07] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[22:14:07] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:14:07] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[22:14:07] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[22:14:07] [Server thread/INFO]: Timings Reset
+[22:14:08] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "Hallo ihr geilen, " " ist hier."
+[22:14:08] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'setjoinmessage' in plugin CustomizedChat v1.0-SNAPSHOT
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[patched_1.16.5.jar:git-Paper-503]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:159) ~[patched_1.16.5.jar:git-Paper-503]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:810) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.handleCommand(PlayerConnection.java:2028) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.c(PlayerConnection.java:1838) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:1791) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:47) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PacketPlayInChat.a(PacketPlayInChat.java:5) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:23) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1138) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1131) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1092) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1006) ~[patched_1.16.5.jar:git-Paper-503]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:175) ~[patched_1.16.5.jar:git-Paper-503]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at de.planetbuilder.customizedchat.commands.CommandJoinMassage.onCommand(CommandJoinMassage.java:54) ~[?:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[patched_1.16.5.jar:git-Paper-503]
+	... 19 more
+[22:22:29] [Server thread/INFO]: ILikeHoppas issued server command: /rl confirm
+[22:22:29] [Server thread/INFO]: ILikeHoppas: Please note that this command is not supported and may cause issues when using some plugins.
+[22:22:29] [Server thread/INFO]: ILikeHoppas: If you encounter any issues please use the /stop command to restart your server.
+[22:22:29] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:22:29] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:22:29] [Server thread/INFO]: Debug logging is disabled
+[22:22:29] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[22:22:29] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:22:29] [Server thread/INFO]: Loaded 7 recipes
+[22:22:29] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[22:22:29] [Server thread/INFO]: Loaded 7 recipes
+[22:22:30] [Server thread/INFO]: [CustomizedChat] Loading CustomizedChat v1.0-SNAPSHOT
+[22:22:30] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:22:30] [Server thread/INFO]: [CustomizedChat] Enabling CustomizedChat v1.0-SNAPSHOT
+[22:22:30] [Server thread/INFO]: ILikeHoppas: Reload complete.
+[22:22:30] [Server thread/INFO]: Timings Reset
+[22:22:33] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "Hallo ihr geilen, " " ist hier."
+[22:22:36] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[22:22:36] [Server thread/INFO]: ILikeHoppas left the game
+[22:22:37] [User Authenticator #5/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[22:22:37] [Server thread/INFO]: Hallo ihr geilen, ILikeHoppas ist hier.
+[22:22:37] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59758] logged in with entity id 4366 at ([world]409.70769269541785, 100.00895231577998, 375.2113012601586)
+[22:24:10] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&4&lHallo ihr geilen, &e" "&4 ist hier."
+[22:24:12] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[22:24:12] [Server thread/INFO]: ILikeHoppas left the game
+[22:24:13] [User Authenticator #6/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[22:24:13] [Server thread/INFO]: Hallo ihr geilen, ILikeHoppas ist hier.
+[22:24:13] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59782] logged in with entity id 4544 at ([world]381.5811245024404, 95.88395222620896, 355.98975508006043)
+[22:24:31] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&4&lHallo ihr geilen, &e&l" "&4 ist hier."
+[22:24:33] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[22:24:33] [Server thread/INFO]: ILikeHoppas left the game
+[22:24:35] [User Authenticator #6/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[22:24:35] [Server thread/INFO]: Hallo ihr geilen, ILikeHoppas ist hier.
+[22:24:35] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59800] logged in with entity id 4645 at ([world]398.40212848005774, 86.50897241957198, 426.3775631622336)
+[22:24:45] [Server thread/INFO]: ILikeHoppas issued server command: /setjoinmessage ILikeHoppas "&4&lHallo ihr geilen, &e&l" "&4&l ist hier."
+[22:24:50] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[22:24:50] [Server thread/INFO]: ILikeHoppas left the game
+[22:24:52] [User Authenticator #6/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[22:24:52] [Server thread/INFO]: Hallo ihr geilen, ILikeHoppas ist hier.
+[22:24:52] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59820] logged in with entity id 4687 at ([world]392.5533908054254, 90.6228216248292, 366.19822805167826)
+[22:28:04] [Server thread/INFO]: ILikeHoppas lost connection: Disconnected
+[22:28:04] [Server thread/INFO]: ILikeHoppas left the game
+[22:28:05] [User Authenticator #7/INFO]: UUID of player ILikeHoppas is e5e4acd8-4f81-4872-929a-21e0bb74f8d7
+[22:28:05] [Server thread/INFO]: Hallo ihr geilen, ILikeHoppas ist hier.
+[22:28:05] [Server thread/INFO]: ILikeHoppas[/127.0.0.1:59874] logged in with entity id 5928 at ([world]761.5523063444651, 84.84887650713245, 127.96289470481192)
+[22:29:11] [Server thread/INFO]: ILikeHoppas issued server command: /stop
+[22:29:11] [Server thread/INFO]: [ILikeHoppas: Stopping the server]
+[22:29:11] [Server thread/INFO]: Stopping server
+[22:29:11] [Server thread/INFO]: [CustomizedChat] Disabling CustomizedChat v1.0-SNAPSHOT
+[22:29:11] [Server thread/INFO]: Saving players
+[22:29:11] [Server thread/INFO]: ILikeHoppas lost connection: Server closed
+[22:29:11] [Server thread/INFO]: ILikeHoppas left the game
+[22:29:11] [Server thread/INFO]: Saving worlds
+[22:29:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:29:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:29:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[22:29:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:29:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[22:29:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:29:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:29:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:29:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:29:12] [Server thread/INFO]: Flushing Chunk IO
+[22:29:12] [Server thread/INFO]: Closing Thread Pool
+[22:29:12] [Server thread/INFO]: Closing Server
