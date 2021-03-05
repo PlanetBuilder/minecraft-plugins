@@ -10,3 +10,7 @@ commands:
     description: Sets joinmessage for a single player
     usage: /<command> <player> <prefix> <suffix>
     aliases: setjoinmessage
+  quitmessage:
+    description: Sets quitmessage for a single player
+    usage: /<command> <player> <prefix> <suffix>
+    aliases: setquitmessage

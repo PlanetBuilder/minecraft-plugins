@@ -7,24 +7,17 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.HashMap;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
 
 public class CommandJoinMassage implements CommandExecutor {
-    private HashMap<UUID, CCPlayerData> cCPlayerDataByUUID;
     Player player;
     Player meantPlayer;
     UUID meantPlayerUUID;
     CCPlayerData temporaryCCPlayerData = new CCPlayerData();
     String prefix;
     String suffix;
-    int[] argsBunnyEars;
-
-    public CommandJoinMassage(HashMap<UUID, CCPlayerData> cCPlayerDataByUUID) {
-        this.cCPlayerDataByUUID = cCPlayerDataByUUID;
-    }
 
 
     @Override
@@ -65,9 +58,9 @@ public class CommandJoinMassage implements CommandExecutor {
         return true;
     }
 
-    private static final Pattern PATTERN = Pattern.compile("\"?( |$)(?=(([^\"]*\"){2})*[^\"]*$)\"?");
+    public static final Pattern PATTERN = Pattern.compile("\"?( |$)(?=(([^\"]*\"){2})*[^\"]*$)\"?");
 
-    public static String[] quotedSpaces(String[] arguments) {
+    public String[] quotedSpaces(String[] arguments) {
         return PATTERN.split(String.join(" ", arguments).replaceAll("^\"", ""));
     }
 }
